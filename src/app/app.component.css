@@ -1,3 +1,17 @@
 * {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.contain {
+    position: relative;
+    display: inline-flex;
+}
+.photo {
+    width: 20%;
+} 
+.inform {
+    margin-top: 30px;
+    margin-left: 155px;
+}
+.books, .date {
+    margin-top: 30px;
+}
