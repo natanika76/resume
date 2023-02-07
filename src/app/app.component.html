@@ -1,27 +1,30 @@
 <div class="contain">
 
-    <div class="photo"><img *ngIf="true" src="./assets/myphoto.jpg" width="300" alt="myphoto"></div>
-    
-    <div class="inform"> 
-    <h3>Никитина Наталья Сергеевна</h3>
-    <p>Дата рождения: 06.09.1976г.</p>
-    <p>Телефон: +7 900-596-27-38</p>
-    <p>email: natali.nickitina2011@yandex.ru</p>
-    <p>г.Липецк</p>
-    <p>Опыт работы 22 года</p>
-    <p>Экономика и управление на предприятии химической промышленности</p>
-    <p>Мое хобби: фотография</p>
-    <p><a href ="https://vk.com/album103012691_288167975" target="_blank" rel="noopener">Ссылка на фотоальбом "Эльбрус" в VK</a></p> 
-    </div>
-    </div>
-    
-    <div class="books">Любимые книги:
-    <table>
-      <tr><th>Автор:</th><th>Название книги:</th></tr>
-      <tr *ngFor="let book of books">
-        <td>{{book.author}}</td><td>{{book.booktitle}}</td>
-      </tr>
-    </table>
-    </div>
-    
-    <div class="date">Дата заполнения резюме: {{nowdate|date:'longDate'|uppercase}} </div>
+  <div class="photo"><img *ngIf="true" src="./assets/myphoto.jpg" width="300" alt="myphoto"></div>
+  
+  <div class="inform"> 
+  <h3>Никитина Наталья Сергеевна</h3>
+  <p>Дата рождения: 06.09.1976г.</p>
+  <p>Телефон: +7 900-596-27-38</p>
+  <p>email: natali.nickitina2011@yandex.ru</p>
+  <p>г.Липецк</p>
+  <p>Опыт работы 22 года</p>
+  <p>Экономика и управление на предприятии химической промышленности</p>
+  <p>Мое хобби: фотография</p>
+  <p><a href ="https://vk.com/album103012691_288167975" target="_blank" rel="noopener">Ссылка на фотоальбом "Эльбрус" в VK</a></p> 
+  </div>
+  </div>
+  
+  <div class="books"><span style="font-style:italic;">Любимые книги:</span>
+  <table>
+    <tr><th>Автор:</th><th>Название книги:</th></tr>
+    <tr *ngFor="let book of books">
+      <td>{{book.author}}</td><td>{{book.booktitle}}</td>
+    </tr>
+  </table>
+  </div>
+  
+  <app-my-music></app-my-music>
+  <app-my-films></app-my-films>
+  
+  <div class="date">Дата заполнения резюме: {{nowdate|date:'longDate'|uppercase}} </div>

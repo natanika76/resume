@@ -1,0 +1,11 @@
+<p class="abzats">Таблица любимых фильмов:</p>
+<table>
+    <tr>
+        <th>Режиссёр:</th>
+        <th>Название:</th>
+    </tr>
+    <tr *ngFor="let film of films">
+        <td>{{film.producer}}</td>
+        <td>{{film.filmname}}</td>
+    </tr>
+</table>
